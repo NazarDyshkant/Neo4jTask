@@ -1,0 +1,24 @@
+﻿<Window x:Class="snmDB.LoginRegisterView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login/Register View" Height="350" Width="400">
+    <Grid>
+        <!-- Заголовок -->
+        <TextBlock FontSize="24" FontWeight="Bold" Text="Login/Register" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"/>
+
+        <!-- Електронна пошта -->
+        <TextBlock Text="Email:" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,80,0,0"/>
+        <TextBox Name="LoginEmailTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="150,80,0,0"/>
+
+        <!-- Пароль -->
+        <TextBlock Text="Password:" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,120,0,0"/>
+        <PasswordBox Name="LoginPasswordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="150,120,0,0"/>
+
+        <!-- Кнопка входу -->
+        <Button Content="Login" Name="LoginButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="150,160,0,0" Click="LoginButton_Click"/>
+
+        <!-- Розділ реєстрації -->
+        <TextBlock Text="Not a member?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,200,0,0"/>
+        <Button Content="Register" Name="RegisterButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="150,230,0,0" Click="RegisterButton_Click"/>
+    </Grid>
+</Window>
